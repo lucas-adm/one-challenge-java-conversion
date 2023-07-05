@@ -1,0 +1,9 @@
+package br.com.alura.challenge;
+
+public class ValorInvalido extends RuntimeException {
+
+	public ValorInvalido(String message) {
+        super(message);
+    }
+	
+}
