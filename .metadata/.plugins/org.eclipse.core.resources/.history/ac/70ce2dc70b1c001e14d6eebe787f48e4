@@ -125,7 +125,7 @@ public class Conversor {
 								"Valor inválido! Digite um número válido, utilize 'ponto' ao invés de 'vírgula' para separar as casas decimais, se necessário.",
 								"Erro", JOptionPane.ERROR_MESSAGE);
 					} catch (NullPointerException e) {
-						// aqui ChatGPT;
+						return;
 					}
 				}
 
@@ -144,7 +144,7 @@ public class Conversor {
 				JOptionPane.showMessageDialog(null, "Você cancelou a execução.", "Sair", JOptionPane.WARNING_MESSAGE);
 				System.exit(0);
 			} else {
-				// aqui ChatGPT
+				return;
 			}
 
 		}

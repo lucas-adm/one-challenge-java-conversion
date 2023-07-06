@@ -12,18 +12,23 @@ public class Conversor {
 		Moeda moeda = new Moeda();
 
 		String[] opcoes = { "Conversor de Moeda", "Conversor de Temperatura" };
+		String opcaoSelecionada;
+		
+		do {
 
-		String opcaoSelecionada = (String) JOptionPane.showInputDialog(null, "Escolha uma opção", "Menu",
+		opcaoSelecionada = (String) JOptionPane.showInputDialog(null, "Escolha uma opção", "Menu",
 				JOptionPane.PLAIN_MESSAGE, null, opcoes, opcoes[0]);
 
-		while (opcaoSelecionada != null) {
-
+		
+			if(opcaoSelecionada != null) {
 			switch (opcaoSelecionada) {
 			case "Conversor de Moeda":
 
-				boolean valorValido = false;
+				boolean valorValido;
 
-				while (!valorValido) {
+				do { 
+					
+					valorValido = true;
 
 					String valorCapturado = JOptionPane.showInputDialog("Insira um valor");
 
@@ -116,39 +121,37 @@ public class Conversor {
 
 						if (opcaoFinal == JOptionPane.YES_OPTION) {
 							valorValido = false; // Reiniciar o loop para obter um novo valor
-						} else {
-							break; // Encerrar o programa
-						}
+						} 
+						
+					}
 
 					} catch (NumberFormatException e) {
 						JOptionPane.showMessageDialog(null,
 								"Valor inválido! Digite um número válido, utilize 'ponto' ao invés de 'vírgula' para separar as casas decimais, se necessário.",
 								"Erro", JOptionPane.ERROR_MESSAGE);
-					} catch (NullPointerException e) {
-						// aqui ChatGPT;
-					}
-				}
+						
+						valorValido = false;
+					} 
+				} while (!valorValido);
+				
+				break;
+					
 
 			case "Conversor de Temperatura":
 				break;
 			}
+			}	
+		}while(opcaoSelecionada!=null);
 
-		}
+	int opcaoSair = JOptionPane.showOptionDialog(null, "Você realmente desejar cancelar a execução", "Cancelar",
+			JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE, null, new Object[] { "Sim", "Não" }, "Não");
 
-		if (opcaoSelecionada == null) {
-
-			int opcaoSair = JOptionPane.showOptionDialog(null, "Você realmente desejar cancelar a execução", "Cancelar",
-					JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE, null, new Object[] { "Sim", "Não" }, "Não");
-
-			if (opcaoSair == JOptionPane.YES_OPTION) {
-				JOptionPane.showMessageDialog(null, "Você cancelou a execução.", "Sair", JOptionPane.WARNING_MESSAGE);
-				System.exit(0);
-			} else {
-				// aqui ChatGPT
-			}
-
-		}
-
+	if(opcaoSair==JOptionPane.YES_OPTION)
+	{
+		JOptionPane.showMessageDialog(null, "Você cancelou a execução.", "Sair", JOptionPane.WARNING_MESSAGE);
+		System.exit(0);
 	}
+
+}
 
 }
