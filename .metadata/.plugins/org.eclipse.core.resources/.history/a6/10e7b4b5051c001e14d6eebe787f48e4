@@ -15,8 +15,8 @@ public class Conversor {
 
 		String opcaoSelecionada = (String) JOptionPane.showInputDialog(null, "Escolha uma opção", "Menu",
 				JOptionPane.PLAIN_MESSAGE, null, opcoes, opcoes[0]);
-
-		if (opcaoSelecionada == null) {
+		
+		if(opcaoSelecionada == null) {
 			System.exit(0);
 		}
 
@@ -120,9 +120,9 @@ public class Conversor {
 				JOptionPane.showMessageDialog(null,
 						"Valor inválido! Digite um número válido, utilize 'ponto' ao invés de 'vírgula' para separar as casas decimais, se necessário.",
 						"Erro", JOptionPane.ERROR_MESSAGE);
-			} catch (NullPointerException e) {
-				break;
-			}
+		} //	catch(NullPointerException e) {
+//				int cancelou = JOptionPane.showOptionDialog(null, "Você cancelou, valorCapturado, 0, 0, null, opcoes, e)
+//			}
 		}
 
 	}

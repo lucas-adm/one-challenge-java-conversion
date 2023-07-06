@@ -62,7 +62,7 @@ public class Conversor {
 
 					case "De Reais a Pesos Argentino":
 						valorDeclarado = valorDeclarado.divide(new BigDecimal(moeda.getPesoArgentino()), 2,
-								RoundingMode.DOWN);
+								RoundingMode.UP);
 						JOptionPane.showMessageDialog(null, "O valor da conversão é de: $ " + valorDeclarado);
 						break;
 

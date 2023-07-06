@@ -11,12 +11,12 @@ public class Conversor {
 
 		Moeda moeda = new Moeda();
 
-		String[] opcoes = { "Conversor de Moeda", "Conversor de Temperatura" };
+		String[] opcoes = { "Conversor de Moeda" };
 
 		String opcaoSelecionada = (String) JOptionPane.showInputDialog(null, "Escolha uma opção", "Menu",
 				JOptionPane.PLAIN_MESSAGE, null, opcoes, opcoes[0]);
-
-		if (opcaoSelecionada == null) {
+		
+		if(opcaoSelecionada == null) {
 			System.exit(0);
 		}
 
@@ -120,8 +120,6 @@ public class Conversor {
 				JOptionPane.showMessageDialog(null,
 						"Valor inválido! Digite um número válido, utilize 'ponto' ao invés de 'vírgula' para separar as casas decimais, se necessário.",
 						"Erro", JOptionPane.ERROR_MESSAGE);
-			} catch (NullPointerException e) {
-				break;
 			}
 		}
 
