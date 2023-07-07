@@ -1,0 +1,31 @@
+package br.com.alura.challenge;
+
+import javax.swing.JOptionPane;
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		Moeda moeda = new Moeda();
+
+		String opcoes[] = { "Converter", "Desconverter" };
+
+		String opcaoSelecionada = (String) JOptionPane.showInputDialog(null, "Escolha uma opção", "Menu",
+				JOptionPane.PLAIN_MESSAGE, null, opcoes, opcoes[0]);
+		
+		String input = JOptionPane.showInputDialog("Insira um valor");
+		
+		String[] opcoesDeConversao = { "De Reais a Dólares", "De Reais a Euros",
+				"De Reais a Libras Esterlinas", "De Reais a Pesos Argentino",
+				"De Reais a Pesos Chileno",
+
+				"De Dólares a Reais", "De Euros a Reais", "De Libras Esterlinas a Reais",
+				"De Pesos Argentino a Reais", "De Pesos Chileno a Reais" };
+
+		String conversaoSelecionada = (String) JOptionPane.showInputDialog(null,
+				"Escolha a moeda para a qual você deseja girar seu dinheiro", "Moedas",
+				JOptionPane.PLAIN_MESSAGE, null, opcoesDeConversao, opcoesDeConversao[0]);
+
+	}
+
+}

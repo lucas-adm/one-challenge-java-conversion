@@ -1,0 +1,25 @@
+package br.com.alura.challenge;
+
+import javax.swing.JOptionPane;
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		String opcoes[] = { "Somar", "Subtrair" };
+
+		String opcaoSelecionada = (String) JOptionPane.showInputDialog(null, "Escolha uma opção", "Menu",
+				JOptionPane.PLAIN_MESSAGE, null, opcoes, opcoes[0]);
+
+		String input = JOptionPane.showInputDialog("Insira um valor");
+		double inputTratado = Double.parseDouble(input);
+
+		String[] opcoesDeConversao = { "Somar", "Subtrair" };
+
+		String conversaoSelecionada = (String) JOptionPane.showInputDialog(null,
+				"Escolha a operação que desejar", "Ação", JOptionPane.PLAIN_MESSAGE, null,
+				opcoesDeConversao, opcoesDeConversao[0]);
+
+	}
+
+}
