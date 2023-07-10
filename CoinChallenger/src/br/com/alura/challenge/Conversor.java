@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 
 import javax.swing.JOptionPane;
+import javax.swing.UIManager;
 
 public class Conversor {
 
@@ -18,21 +19,25 @@ public class Conversor {
 		while (!loop) {
 
 			try {
-				String opcaoSelecionada = (String) JOptionPane.showInputDialog(null, "Escolha uma opção", "Menu",
+
+				UIManager.put("OptionPane.okButtonText", "Avançar");
+				UIManager.put("OptionPane.cancelButtonText", "Sair");
+				String opcaoSelecionada = (String) JOptionPane.showInputDialog(null, "Escolha uma opção:", "Menu",
 						JOptionPane.PLAIN_MESSAGE, null, opcoes, opcoes[0]);
 
 				switch (opcaoSelecionada) {
 				case "Conversor de Moeda":
 
 					String valorCapturado = null;
+					boolean valorValido = false;
 
 					do {
 
-						boolean valorValido = false;
-
 						while (!valorValido) {
 
-							valorCapturado = JOptionPane.showInputDialog("Insira um valor");
+							UIManager.put("OptionPane.okButtonText", "Avançar");
+							UIManager.put("OptionPane.cancelButtonText", "Voltar");
+							valorCapturado = JOptionPane.showInputDialog("Insira um valor:");
 
 							try {
 								BigDecimal valorDeclarado = new BigDecimal(valorCapturado);
@@ -46,115 +51,135 @@ public class Conversor {
 										"De Pesos Argentino a Reais", "De Pesos Chileno a Reais" };
 
 								String conversaoSelecionada = (String) JOptionPane.showInputDialog(null,
-										"Escolha a moeda para a qual você deseja girar seu dinheiro", "Moedas",
+										"Escolha a moeda para a qual você deseja girar seu dinheiro:", "Moedas",
 										JOptionPane.PLAIN_MESSAGE, null, opcoesDeConversao, opcoesDeConversao[0]);
 
-								switch (conversaoSelecionada) {
+								try {
 
-								// Conversão Internacional
-								case "De Reais a Dólares":
-									valorDeclarado = valorDeclarado.divide(new BigDecimal(moeda.getDolar()), 2,
-											RoundingMode.DOWN);
-									JOptionPane.showMessageDialog(null,
-											"O valor da conversão é de: $ " + valorDeclarado);
-									break;
+									UIManager.put("OptionPane.okButtonText", "Finalizar");
+									
+									switch (conversaoSelecionada) {
+									
+									// Conversão Internacional
+									case "De Reais a Dólares":
+										valorDeclarado = valorDeclarado.divide(new BigDecimal(moeda.getDolar()), 2,
+												RoundingMode.DOWN);
+										JOptionPane.showMessageDialog(null,
+												"O valor da conversão é de: $ " + valorDeclarado);
+										break;
 
-								case "De Reais a Euros":
-									valorDeclarado = valorDeclarado.divide(new BigDecimal(moeda.getEuro()), 2,
-											RoundingMode.DOWN);
-									JOptionPane.showMessageDialog(null,
-											"O valor da conversão é de: € " + valorDeclarado);
-									break;
+									case "De Reais a Euros":
+										valorDeclarado = valorDeclarado.divide(new BigDecimal(moeda.getEuro()), 2,
+												RoundingMode.DOWN);
+										JOptionPane.showMessageDialog(null,
+												"O valor da conversão é de: € " + valorDeclarado);
+										break;
 
-								case "De Reais a Libras Esterlinas":
-									valorDeclarado = valorDeclarado.divide(new BigDecimal(moeda.getLibraEsterlinas()),
-											2, RoundingMode.DOWN);
-									JOptionPane.showMessageDialog(null,
-											"O valor da conversão é de: £ " + valorDeclarado);
-									break;
+									case "De Reais a Libras Esterlinas":
+										valorDeclarado = valorDeclarado.divide(
+												new BigDecimal(moeda.getLibraEsterlinas()), 2, RoundingMode.DOWN);
+										JOptionPane.showMessageDialog(null,
+												"O valor da conversão é de: £ " + valorDeclarado);
+										break;
 
-								case "De Reais a Pesos Argentino":
-									valorDeclarado = valorDeclarado.divide(new BigDecimal(moeda.getPesoArgentino()), 2,
-											RoundingMode.DOWN);
-									JOptionPane.showMessageDialog(null,
-											"O valor da conversão é de: $ " + valorDeclarado);
-									break;
+									case "De Reais a Pesos Argentino":
+										valorDeclarado = valorDeclarado.divide(new BigDecimal(moeda.getPesoArgentino()),
+												2, RoundingMode.DOWN);
+										JOptionPane.showMessageDialog(null,
+												"O valor da conversão é de: $ " + valorDeclarado);
+										break;
 
-								case "De Reais a Pesos Chileno":
-									valorDeclarado = valorDeclarado.divide(new BigDecimal(moeda.getPesoChileno()), 2,
-											RoundingMode.DOWN);
-									JOptionPane.showMessageDialog(null,
-											"O valor da conversão é de: $ " + valorDeclarado);
-									break;
+									case "De Reais a Pesos Chileno":
+										valorDeclarado = valorDeclarado.divide(new BigDecimal(moeda.getPesoChileno()),
+												2, RoundingMode.DOWN);
+										JOptionPane.showMessageDialog(null,
+												"O valor da conversão é de: $ " + valorDeclarado);
+										break;
 
-								// Conversão Nacional
-								case "De Dólares a Reais":
-									valorDeclarado = valorDeclarado.multiply(new BigDecimal(moeda.getDolar()));
-									valorDeclarado = valorDeclarado.setScale(2, RoundingMode.DOWN);
-									JOptionPane.showMessageDialog(null,
-											"O valor da conversão é de: R$ " + valorDeclarado);
-									break;
+									// Conversão Nacional
+									case "De Dólares a Reais":
+										valorDeclarado = valorDeclarado.multiply(new BigDecimal(moeda.getDolar()));
+										valorDeclarado = valorDeclarado.setScale(2, RoundingMode.DOWN);
+										JOptionPane.showMessageDialog(null,
+												"O valor da conversão é de: R$ " + valorDeclarado);
+										break;
 
-								case "De Euros a Reais":
-									valorDeclarado = valorDeclarado.multiply(new BigDecimal(moeda.getEuro()));
-									valorDeclarado = valorDeclarado.setScale(2, RoundingMode.DOWN);
-									JOptionPane.showMessageDialog(null,
-											"O valor da conversão é de: R$ " + valorDeclarado);
-									break;
+									case "De Euros a Reais":
+										valorDeclarado = valorDeclarado.multiply(new BigDecimal(moeda.getEuro()));
+										valorDeclarado = valorDeclarado.setScale(2, RoundingMode.DOWN);
+										JOptionPane.showMessageDialog(null,
+												"O valor da conversão é de: R$ " + valorDeclarado);
+										break;
 
-								case "De Libras Esterlinas a Reais":
-									valorDeclarado = valorDeclarado
-											.multiply(new BigDecimal(moeda.getLibraEsterlinas()));
-									valorDeclarado = valorDeclarado.setScale(2, RoundingMode.DOWN);
-									JOptionPane.showMessageDialog(null,
-											"O valor da conversão é de: R$ " + valorDeclarado);
-									break;
+									case "De Libras Esterlinas a Reais":
+										valorDeclarado = valorDeclarado
+												.multiply(new BigDecimal(moeda.getLibraEsterlinas()));
+										valorDeclarado = valorDeclarado.setScale(2, RoundingMode.DOWN);
+										JOptionPane.showMessageDialog(null,
+												"O valor da conversão é de: R$ " + valorDeclarado);
+										break;
 
-								case "De Pesos Argentino a Reais":
-									valorDeclarado = valorDeclarado.multiply(new BigDecimal(moeda.getPesoArgentino()));
-									valorDeclarado = valorDeclarado.setScale(2, RoundingMode.DOWN);
-									JOptionPane.showMessageDialog(null,
-											"O valor da conversão é de: R$ " + valorDeclarado);
-									break;
+									case "De Pesos Argentino a Reais":
+										valorDeclarado = valorDeclarado
+												.multiply(new BigDecimal(moeda.getPesoArgentino()));
+										valorDeclarado = valorDeclarado.setScale(2, RoundingMode.DOWN);
+										JOptionPane.showMessageDialog(null,
+												"O valor da conversão é de: R$ " + valorDeclarado);
+										break;
 
-								case "De Pesos Chileno a Reais":
-									valorDeclarado = valorDeclarado.multiply(new BigDecimal(moeda.getPesoChileno()));
-									valorDeclarado = valorDeclarado.setScale(2, RoundingMode.DOWN);
-									JOptionPane.showMessageDialog(null,
-											"O valor da conversão é de: R$ " + valorDeclarado);
-									break;
+									case "De Pesos Chileno a Reais":
+										valorDeclarado = valorDeclarado
+												.multiply(new BigDecimal(moeda.getPesoChileno()));
+										valorDeclarado = valorDeclarado.setScale(2, RoundingMode.DOWN);
+										JOptionPane.showMessageDialog(null,
+												"O valor da conversão é de: R$ " + valorDeclarado);
+										break;
+									}
+								} catch (NullPointerException ex) {
+									valorValido = false; // reseta o while
+									break; // trava o while
 								}
 
-//								if (conversaoSelecionada == null) {
-//									valorValido = true;
-//								}
-
-								int opcaoFinal = JOptionPane.showOptionDialog(null,
-										"Conversão concluída. Deseja converter outro valor?", "Conversão concluída",
-										JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null,
-										new Object[] { "Sim", "Não" }, "Sim");
+								int opcaoFinal = JOptionPane.showOptionDialog(null, "Deseja continuar?",
+										"Selecione uma opção:", JOptionPane.YES_NO_CANCEL_OPTION,
+										JOptionPane.QUESTION_MESSAGE, null, new Object[] { "Sim", "Não", "Cancelar" },
+										"Sim");
 
 								if (opcaoFinal == JOptionPane.YES_OPTION) {
 									loop = false; // Retorna à lista
-								} else {
+								}
+								if (opcaoFinal == JOptionPane.NO_OPTION) {
+									UIManager.put("OptionPane.okButtonText", "Sair");
+									JOptionPane.showMessageDialog(null, "Programa finalizado.");
+									return; // Encerra a aplicação
+								}
+								if (opcaoFinal == JOptionPane.CANCEL_OPTION) {
+									UIManager.put("OptionPane.okButtonText", "Sair");
+									JOptionPane.showMessageDialog(null, "Programa concluído.");
 									return; // Encerra a aplicação
 								}
 
 								// Valor inválido inserido
 							} catch (NumberFormatException e) {
+								UIManager.put("OptionPane.okButtonText", "Tentar novamente");
 								JOptionPane.showMessageDialog(null,
-										"Valor inválido! Digite um número válido, utilize 'ponto' ao invés de 'vírgula' para separar as casas decimais, se necessário.",
-										"Erro", JOptionPane.ERROR_MESSAGE);
+										"Digite apenas números e separe as casas decimais com ' . '", "Valor inválido",
+										JOptionPane.ERROR_MESSAGE);
 							} catch (NullPointerException e) {
 								valorValido = true;
 							}
 
 						} // while
 
-					} while (valorCapturado != null); // do
+						// retorna à lista
+					} while (!valorValido); // do
+
+					break; // case1
 
 				case "Conversor de Temperatura":
-					break;
+					UIManager.put("OptionPane.okButtonText", "Voltar");
+					JOptionPane.showMessageDialog(null, "Em trabalho");
+					break; // case 2
 				}
 
 				// if (opcaoSelecionada == null) {

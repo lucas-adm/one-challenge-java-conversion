@@ -2,12 +2,12 @@ package br.com.alura.challenge;
 
 public class Moeda {
 
-	// COTAÇÃO DO DIA 05/07/2023 10:52am
-	private double dolar = 4.86;
-	private double euro = 5.29;
-	private double libraEsterlinas = 6.18;
+	// COTAÇÃO DO DIA 07/07/2023 15:59pm
+	private double dolar = 4.85;
+	private double euro = 5.32;
+	private double libraEsterlinas = 6.23;
 	private double pesoArgentino = 0.019;
-	private double pesoChileno = 0.0061;
+	private double pesoChileno = 0.0060;
 
 	public double getDolar() {
 		return dolar;
