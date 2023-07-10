@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_kCfoUBm6Ee6EG5sjDS16nQ" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_kCfoURm6Ee6EG5sjDS16nQ" bindingContexts="_kCgPYhm6Ee6EG5sjDS16nQ">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Conversor.java&quot; tooltip=&quot;CoinChallenger/src/br/com/alura/challenge/Conversor.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/CoinChallenger/src/br/com/alura/challenge/Conversor.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Moeda.java&quot; tooltip=&quot;CoinChallenger/src/br/com/alura/challenge/Moeda.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/CoinChallenger/src/br/com/alura/challenge/Moeda.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Test.java&quot; tooltip=&quot;CoinChallenger/src/br/com/alura/challenge/Test.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/CoinChallenger/src/br/com/alura/challenge/Test.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Exceptions.java&quot; tooltip=&quot;CoinChallenger/src/br/com/alura/challenge/Exceptions.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/CoinChallenger/src/br/com/alura/challenge/Exceptions.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.jdt.ui.ClassFileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.ClassFileEditor&quot; name=&quot;RuntimeException.class&quot; tooltip=&quot;java.lang.RuntimeException&quot;>&#xD;&#xA;&lt;persistable org.eclipse.jdt.ui.ClassFileIdentifier=&quot;=CoinChallenger/C:\/Program Files\/Java\/jdk-20\/lib\/jrt-fs.jar`java.base=/module=/true=/&amp;lt;java.lang(RuntimeException.class&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Conversor.java&quot; tooltip=&quot;CoinChallenge/src/br/com/alura/challenge/Conversor.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/CoinChallenge/src/br/com/alura/challenge/Conversor.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Moeda.java&quot; tooltip=&quot;CoinChallenge/src/br/com/alura/challenge/Moeda.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/CoinChallenge/src/br/com/alura/challenge/Moeda.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Conversor.java&quot; tooltip=&quot;CoinChallenger/src/br/com/alura/challenge/Conversor.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/CoinChallenger/src/br/com/alura/challenge/Conversor.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Moeda.java&quot; tooltip=&quot;CoinChallenger/src/br/com/alura/challenge/Moeda.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/CoinChallenger/src/br/com/alura/challenge/Moeda.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Test.java&quot; tooltip=&quot;CoinChallenger/src/br/com/alura/challenge/Test.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/CoinChallenger/src/br/com/alura/challenge/Test.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Exceptions.java&quot; tooltip=&quot;CoinChallenger/src/br/com/alura/challenge/Exceptions.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/CoinChallenger/src/br/com/alura/challenge/Exceptions.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.jdt.ui.ClassFileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.ClassFileEditor&quot; name=&quot;RuntimeException.class&quot; tooltip=&quot;java.lang.RuntimeException&quot;>&#xD;&#xA;&lt;persistable org.eclipse.jdt.ui.ClassFileIdentifier=&quot;=CoinChallenger/C:\/Program Files\/Java\/jdk-20\/lib\/jrt-fs.jar`java.base=/module=/true=/&amp;lt;java.lang(RuntimeException.class&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_kCfoURm6Ee6EG5sjDS16nQ" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_kO-lIhm6Ee6EG5sjDS16nQ" label="%trimmedwindow.label.eclipseSDK" x="0" y="0" width="1024" height="768">
     <persistedState key="coolBarVisible" value="true"/>
@@ -92,6 +92,10 @@
                   <tags>View</tags>
                   <tags>categoryTag:Java</tags>
                 </children>
+                <children xsi:type="advanced:Placeholder" xmi:id="_6OZMER9HEe6hI6qaS5nwMQ" elementId="org.eclipse.ui.views.ResourceNavigator" toBeRendered="false" ref="_6OZMEB9HEe6hI6qaS5nwMQ" closeable="true">
+                  <tags>View</tags>
+                  <tags>categoryTag:General</tags>
+                </children>
               </children>
               <children xsi:type="basic:PartStack" xmi:id="_kVbLahm6Ee6EG5sjDS16nQ" elementId="org.eclipse.egit.ui.RepositoriesViewMStack" toBeRendered="false" containerData="4000">
                 <children xsi:type="advanced:Placeholder" xmi:id="_kVbLaxm6Ee6EG5sjDS16nQ" elementId="org.eclipse.egit.ui.RepositoriesView" toBeRendered="false" ref="_kVakUBm6Ee6EG5sjDS16nQ" closeable="true">
@@ -100,7 +104,7 @@
                 </children>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_kVbLbBm6Ee6EG5sjDS16nQ" containerData="7500" selectedElement="_kVbLdRm6Ee6EG5sjDS16nQ">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_kVbLbBm6Ee6EG5sjDS16nQ" containerData="7500" selectedElement="_kVbLbRm6Ee6EG5sjDS16nQ">
               <children xsi:type="basic:PartSashContainer" xmi:id="_kVbLbRm6Ee6EG5sjDS16nQ" containerData="7500" selectedElement="_kVbLbhm6Ee6EG5sjDS16nQ" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_kVbLbhm6Ee6EG5sjDS16nQ" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_kVNI8Bm6Ee6EG5sjDS16nQ"/>
                 <children xsi:type="basic:PartStack" xmi:id="_kVbLbxm6Ee6EG5sjDS16nQ" elementId="right" toBeRendered="false" containerData="2500">
@@ -129,6 +133,7 @@
               </children>
               <children xsi:type="basic:PartStack" xmi:id="_kVbLdRm6Ee6EG5sjDS16nQ" elementId="bottom" containerData="2500" selectedElement="_kVbLehm6Ee6EG5sjDS16nQ">
                 <tags>org.eclipse.e4.secondaryDataStack</tags>
+                <tags>General</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_kVbLdhm6Ee6EG5sjDS16nQ" elementId="org.eclipse.ui.views.ProblemView" ref="_kVTPkhm6Ee6EG5sjDS16nQ" closeable="true">
                   <tags>View</tags>
                   <tags>categoryTag:General</tags>
@@ -351,6 +356,18 @@
       <tags>View</tags>
       <tags>categoryTag:Ant</tags>
     </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_6OZMEB9HEe6hI6qaS5nwMQ" elementId="org.eclipse.ui.views.ResourceNavigator" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Navigator (Deprecated)" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview16/filenav_nav.png" tooltip="" closeable="true">
+      <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.ui.ide"/>
+      <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.views.navigator.ResourceNavigator"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view LINK_NAVIGATOR_TO_EDITOR=&quot;0&quot; sorter=&quot;1&quot;>&#xD;&#xA;&lt;filters>&#xD;&#xA;&lt;filter element=&quot;*.class&quot; isEnabled=&quot;false&quot;/>&#xD;&#xA;&lt;filter element=&quot;.*&quot; isEnabled=&quot;false&quot;/>&#xD;&#xA;&lt;/filters>&#xD;&#xA;&lt;/view>"/>
+      <tags>View</tags>
+      <tags>categoryTag:General</tags>
+      <menus xmi:id="_6OnOgB9HEe6hI6qaS5nwMQ" elementId="org.eclipse.ui.views.ResourceNavigator">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_6OnOgR9HEe6hI6qaS5nwMQ" elementId="org.eclipse.ui.views.ResourceNavigator" visible="false"/>
+    </sharedElements>
     <trimBars xmi:id="_kCfoUhm6Ee6EG5sjDS16nQ" elementId="org.eclipse.ui.main.toolbar" contributorURI="platform:/plugin/org.eclipse.platform">
       <children xsi:type="menu:ToolBar" xmi:id="_kQBuABm6Ee6EG5sjDS16nQ" elementId="group.file" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -358,7 +375,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_kQCVEBm6Ee6EG5sjDS16nQ" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_q_J9YB8pEe6jvtz6Xtb82A" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_kC__IRm6Ee6EG5sjDS16nQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_ypvu4B9HEe6hI6qaS5nwMQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_kC__IRm6Ee6EG5sjDS16nQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_kQCVERm6Ee6EG5sjDS16nQ" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -389,7 +406,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_kQC8IBm6Ee6EG5sjDS16nQ" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_q_KkdB8pEe6jvtz6Xtb82A" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" enabled="false" type="Check" command="_kC_-ohm6Ee6EG5sjDS16nQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_ypw9AB9HEe6hI6qaS5nwMQ" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" enabled="false" type="Check" command="_kC_-ohm6Ee6EG5sjDS16nQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_kQC8IRm6Ee6EG5sjDS16nQ" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
