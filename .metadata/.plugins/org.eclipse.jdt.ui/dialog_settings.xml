@@ -47,11 +47,12 @@
 	</section>
 	<section name="FatJarPackageWizard">
 		<item key="FatJarPackageWizardPage.ANTSCRIPT_SAVE" value="false"/>
-		<item key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION" value="C:\Users\Micro\Desktop\ONE-CoinChallenger"/>
+		<item key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION" value="C:\Users\Micro\Desktop\ONE-CoinChallenger.xml"/>
 		<item key="FatJarPackageWizardPage.LIBRARY_HANDLING" value="1"/>
 		<item key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME" value="Conversor - CoinChallenge"/>
-		<item key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION" value="C:\Users\Micro\Desktop\ONE-CoinChallenger\ConversorExecutavel.jar"/>
+		<item key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION" value="CoinChallenge\ConversorExecutavel.jar"/>
 		<list key="FatJarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="CoinChallenge/ConversorExecutavel.jar"/>
 			<item value="C:\Users\Micro\Desktop\ONE-CoinChallenger\ConversorExecutavel.jar"/>
 			<item value="C:\Users\Micro\Desktop\testeExecutavel\Conversor.jar"/>
 		</list>

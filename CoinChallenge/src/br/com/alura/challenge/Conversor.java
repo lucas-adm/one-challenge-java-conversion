@@ -57,9 +57,9 @@ public class Conversor {
 								try {
 
 									UIManager.put("OptionPane.okButtonText", "Finalizar");
-									
+
 									switch (conversaoSelecionada) {
-									
+
 									// Conversão Internacional
 									case "De Reais a Dólares":
 										valorDeclarado = valorDeclarado.divide(new BigDecimal(moeda.getDolar()), 2,
@@ -177,9 +177,127 @@ public class Conversor {
 					break; // case1
 
 				case "Conversor de Temperatura":
-					UIManager.put("OptionPane.okButtonText", "Voltar");
-					JOptionPane.showMessageDialog(null, "Em trabalho");
-					break; // case 2
+
+					String grauCapturado = null;
+					boolean grauValido = false;
+
+					do {
+
+						while (!grauValido) {
+
+							UIManager.put("OptionPane.okButtonText", "Avançar");
+							UIManager.put("OptionPane.cancelButtonText", "Voltar");
+							grauCapturado = JOptionPane.showInputDialog("Insira um grau:");
+
+							try {
+
+								BigDecimal grauDeclarado = new BigDecimal(grauCapturado);
+								grauValido = true;
+
+								String[] opcoesDeConversao = { "De Celsius para Fahrenheit", "De Celsius para Kelvin",
+
+										"De Fahrenheit para Celsius", "De Fahrenheit para Kelvin",
+
+										"De Kelvin para Celsius", "De Kelvin para Fahrenheit" };
+
+								String conversaoSelecionada = (String) JOptionPane.showInputDialog(null,
+										"Escolha a escala para a qual você deseja converter:", "Escalas",
+										JOptionPane.PLAIN_MESSAGE, null, opcoesDeConversao, opcoesDeConversao[0]);
+
+								try {
+
+									UIManager.put("OptionPane.okButtonText", "Finalizar");
+
+									switch (conversaoSelecionada) {
+
+									case "De Celsius para Fahrenheit":
+										grauDeclarado = grauDeclarado.multiply(new BigDecimal("1.8"))
+												.add(new BigDecimal("32"));
+										grauDeclarado = grauDeclarado.setScale(1, RoundingMode.UP);
+										JOptionPane.showMessageDialog(null,
+												"O valor da conversão é de: °F " + grauDeclarado);
+										break;
+
+									case "De Celsius para Kelvin":
+										grauDeclarado = grauDeclarado.add(new BigDecimal("273.15"));
+										grauDeclarado = grauDeclarado.setScale(1, RoundingMode.UP);
+										JOptionPane.showMessageDialog(null,
+												"O valor da conversão é de: °K " + grauDeclarado);
+										break;
+
+									case "De Fahrenheit para Celsius":
+										grauDeclarado = grauDeclarado.subtract(new BigDecimal("32"))
+												.multiply(new BigDecimal("0.55"));
+										grauDeclarado = grauDeclarado.setScale(1, RoundingMode.UP);
+										JOptionPane.showMessageDialog(null,
+												"O valor da conversão é de: °C " + grauDeclarado);
+										break;
+
+									case "De Fahrenheit para Kelvin":
+										grauDeclarado = grauDeclarado.subtract(new BigDecimal("32"))
+												.multiply(new BigDecimal("0.55")).add(new BigDecimal("273.15"));
+										grauDeclarado = grauDeclarado.setScale(1, RoundingMode.UP);
+										JOptionPane.showMessageDialog(null,
+												"O valor da conversão é de: °K " + grauDeclarado);
+										break;
+
+									case "De Kelvin para Celsius":
+										grauDeclarado = grauDeclarado.subtract(new BigDecimal("273.15"));
+										grauDeclarado = grauDeclarado.setScale(1, RoundingMode.UP);
+										JOptionPane.showMessageDialog(null,
+												"O valor da conversão é de: °C " + grauDeclarado);
+										break;
+
+									case "De Kelvin para Fahrenheit":
+//										(1 K − 273,15) × 9/5 + 32 = -457,7 °F
+										grauDeclarado = grauDeclarado.subtract(new BigDecimal("273.15"))
+												.multiply(new BigDecimal("1.8")).add(new BigDecimal("32"));
+										grauDeclarado = grauDeclarado.setScale(1, RoundingMode.UP);
+										JOptionPane.showMessageDialog(null,
+												"O valor da conversão é de: °F " + grauDeclarado);
+										break;
+
+									} // switch
+
+								} catch (NullPointerException eX) { // try-catch da conversão
+									grauValido = false; // reseta o while
+									break; // trava o while
+								}
+
+								int opcaoFinal = JOptionPane.showOptionDialog(null, "Deseja continuar?",
+										"Selecione uma opção:", JOptionPane.YES_NO_CANCEL_OPTION,
+										JOptionPane.QUESTION_MESSAGE, null, new Object[] { "Sim", "Não", "Cancelar" },
+										"Sim");
+
+								if (opcaoFinal == JOptionPane.YES_OPTION) {
+									loop = false; // Retorna à lista
+								}
+								if (opcaoFinal == JOptionPane.NO_OPTION) {
+									UIManager.put("OptionPane.okButtonText", "Sair");
+									JOptionPane.showMessageDialog(null, "Programa finalizado.");
+									return; // Encerra a aplicação
+								}
+								if (opcaoFinal == JOptionPane.CANCEL_OPTION) {
+									UIManager.put("OptionPane.okButtonText", "Sair");
+									JOptionPane.showMessageDialog(null, "Programa concluído.");
+									return; // Encerra a aplicação
+								}
+
+								// try-catch do input
+							} catch (NumberFormatException e) {
+								UIManager.put("OptionPane.okButtonText", "Tentar novamente");
+								JOptionPane.showMessageDialog(null,
+										"Digite apenas números e separe as casas decimais com ' . '", "Grau inválido",
+										JOptionPane.ERROR_MESSAGE);
+							} catch (NullPointerException e) {
+								grauValido = true;
+							}
+
+						} // while
+
+					} while (!grauValido); // do
+
+					break; // case2
 				}
 
 				// if (opcaoSelecionada == null) {
