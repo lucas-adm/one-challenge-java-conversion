@@ -1,6 +1,20 @@
-[![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=0A3871&size=50&center=true&vCenter=true&width=1000&lines=Desafio+de+Conversão;Feito+por+Lucas+de+Moraes;@loolcas+:%29)](https://git.io/typing-svg)
+<h3 align="center">Conversor</h3>
 
-<h2 align="center"> O desafio propõe a criação de uma aplicação que converta valores. </h2>
+<div align="center">
+
+  ![image](https://github.com/lucas-adm/one-challenge-java-conversion/assets/118030896/0e27e698-de80-484a-b989-bf0c6264fe67)
+
+  ###### Java
+
+</div>
+
+#
+
+#### 🔽 Faça o download do executável por <a href="https://github.com/lucas-adm/one-challenge-java-conversion/raw/main/ConversorExecutavel.jar">*aqui*</a>
+
+<details>
+
+<h4>O desafio propõe a criação de uma aplicação que converta valores.</h4>
 
 Nesta oportunidade foi solicitado para nós Devs a criação de um conversor de moeda utilizando a linguagem Java. 
 
@@ -28,35 +42,10 @@ O resultado deve ser exibido utilizando uma interface.
 
 Após o resultado o dev deve fornecer uma caixa de opções para que o usuário decida prosseguir ou se retirar da aplicação.
 
-<p align="center">
-<i>
-<a href="https://github.com/loolcas/ONE-CoinChallenge/raw/main/ConversorExecutavel.jar" target="_blank">Utilize o executável da aplicação!</a>
-</i>
-</p>
+</details>
 
-<table align="center">
-  <thead>
-    <tr>
-      <td>Tech</td>
-      <td>Lib</td>
-      <td>Class</td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Java</td>
-      <td>java.math</td>
-      <td>BigDecimal, RoundingMode</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>java.swing</td>
-      <td>JOption Pane, UIManager</td>
-    </tr>
-  </tbody>
-</table>
+<div align="center">
 
-> Deploy
-```ruby
-https://github.com/loolcas/ONE-CoinChallenge/raw/main/ConversorExecutavel.jar
-
+![](https://i.imgur.com/1ScY6GV.png)
+  
+</div>
